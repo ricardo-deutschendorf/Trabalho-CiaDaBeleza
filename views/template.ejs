@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cia D' Beleza</title>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/template.css' />
+</head>
+
+<body>
+    <header>
+        <!---NAV-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid conteinernav">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/cdb.jpg" alt="Logo" class="logo-image">
+                    <strong><span>Cia D'</span>Beleza</strong>
+                </a>
+                <div class="collapse navbar-collapse botoesnav" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Pagina inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-lg-none">
+                    <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+                    <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                </div>
+            </div>
+        </nav>
+        <!---NAV-->
+    </header>
+    <main>
+        <%- body %>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-image">
+                <img src="/images/footer-logo.jpeg" alt="Footer Logo">
+            </div>
+            <div class="footer-info">
+                <p>feito por Ricardo Deutschendorf</p>
+                <p>Endereço: Rua Exemplo, 123, Cidade, Estado</p>
+                <p>Telefone: (00) 1234-5678</p>
+                <p>Email: contato@ciadbeleza.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/javascripts/template.js"></script>
+</body>
+
+</html>

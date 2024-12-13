@@ -1,0 +1,255 @@
+/* Definindo as cores principais */
+:root {
+    --primary-color: #f1c3eb; /* Cor de fundo suave */
+    --secondary-color: #B766A3; /* Cor de destaque */
+    --text-color: #fff; /* Cor do texto */
+    --hover-color: #ddd; /* Cor ao passar o mouse */
+    --background-color: #e2c1e9; /* Cor de fundo agradável */
+}
+
+/* Background styling */
+body {
+    background-color: var(--background-color); /* Usando a cor de fundo agradável */
+    display: flex;
+    flex-direction: column; /* Faz o layout ocupar toda a altura da tela */
+    height: 100%;
+    margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--secondary-color); /* Usando a cor secundária */
+    padding: 1.5rem; /* Aumentando o espaçamento */
+    width: 100%;
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0; /* Alinha ao topo da página */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Garante que a navbar fique acima do conteúdo */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animação suave */
+    font-family: 'Arial', sans-serif; /* Fonte mais moderna */
+    height: 80px; /* Ajuste a altura conforme necessário */
+    display: flex; /* Usando flexbox para layout */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaça os itens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra na parte inferior */
+}
+
+/* A classe que será adicionada para esconder a navbar */
+.navbar-hidden {
+    transform: translateY(-100%); /* Move a navbar para fora da tela */
+    opacity: 0; /* Torna a navbar invisível */
+}
+
+/* Navbar brand (logo) */
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10rem; /* Adiciona margem à esquerda para mover a logo para a direita */
+}
+
+/* Logo image */
+.navbar-brand .logo-image {
+    width: 100px; /* Ajuste para o tamanho desejado */
+    height: 100px; /* Tamanho igual à largura */
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+    margin-right: 0.5rem; /* Reduz o espaçamento entre a imagem e o texto */
+}
+
+/* Navbar links */
+.navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar .nav-link {
+    color: var(--text-color);
+    margin-right: 1rem; /* Reduz o espaçamento entre os botões */
+    font-size: 1.2rem; /* Aumentando o tamanho da fonte */
+    font-weight: 500; /* Deixando o texto mais grosso */
+    text-transform: uppercase; /* Letra maiúscula para dar destaque */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    transition: color 0.3s ease; /* Animação suave para o hover */
+    text-decoration: none; /* Remove a sublinha dos links */
+}
+
+.navbar .nav-link:hover {
+    color: var(--hover-color);
+}
+
+/* Custom icons */
+.navbar .custom-icon {
+    color: var(--text-color);
+    font-size: 1.5rem; /* Aumentando o tamanho dos ícones */
+}
+
+.navbar .custom-icon:hover {
+    color: var(--hover-color);
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: var(--secondary-color); /* Usando a cor secundária */
+    color: var(--text-color);
+    padding: 3rem 1rem; /* Mais espaçamento para um footer mais chamativo */
+    text-align: center;
+    width: 100%;
+    position: relative; /* Faz o footer ocupar o final da página */
+    margin-top: auto; /* Empurra o footer para o final da tela */
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animação suave */
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+}
+
+.footer-image {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 1rem; /* Espaçamento inferior para telas menores */
+}
+
+.footer-image img {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.footer-info {
+    flex: 2;
+    text-align: left;
+    padding-left: 2rem; /* Espaçamento à esquerda */
+}
+
+.footer-info p {
+    margin: 0.5rem 0; /* Espaçamento entre os parágrafos */
+    font-size: 1.1rem; /* Aumentando o tamanho do texto */
+    font-weight: 400;
+}
+
+.footer-info a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem; /* Aumentando o tamanho do link */
+    font-weight: 400;
+    transition: color 0.3s ease; /* Animação suave para o hover */
+}
+
+.footer-info a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* A classe que será adicionada para esconder o footer */
+.footer-hidden {
+    transform: translateY(100%); /* Move o footer para fora da tela */
+    opacity: 0; /* Torna o footer invisível */
+}
+
+.site-footer p {
+    font-size: 1.1rem; /* Aumentando o tamanho do texto */
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.site-footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem; /* Aumentando o tamanho do link */
+    font-weight: 400;
+    transition: color 0.3s ease; /* Animação suave para o hover */
+}
+
+.site-footer a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding-top: 6rem; /* Adiciona mais espaço para a navbar fixa */
+    padding-bottom: 6rem; /* Mais espaço para o footer */
+    flex: 1; /* O conteúdo ocupa o espaço restante */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Ensuring full page height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Faz o layout ocupar toda a altura da tela */
+}
+
+main {
+    flex: 1; /* O conteúdo principal ocupa o espaço restante entre a navbar e o footer */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-link {
+        margin-right: 0;
+        margin-bottom: 1.5rem; /* Aumenta o espaçamento entre os links */
+        font-size: 1.3rem; /* Aumentando o tamanho da fonte nos dispositivos móveis */
+    }
+
+    .navbar .custom-icon {
+        margin-bottom: 1.5rem;
+    }
+
+    .site-footer {
+        padding: 2rem 1rem; /* Ajuste para dispositivos móveis */
+    }
+
+    .site-footer p, .site-footer a {
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte no footer */
+    }
+
+    .navbar-brand {
+        font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .navbar-brand .tattoo {
+        color: #000;
+    }
+    
+    .navbar-brand .beleza {
+        color: #000; /* Cor preta para "Beleza" */
+    }
+    
+}
+
+.conteinernav {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens */
+    align-items: center;
+    width: 80%;
+}
+
+.navbar-brand .tattoo {
+    color: #f1c3eb ; /* Cor laranja */
+}
+
+.navbar-brand .beleza {
+    color: #7a2477; /* Cor preta */
+}
