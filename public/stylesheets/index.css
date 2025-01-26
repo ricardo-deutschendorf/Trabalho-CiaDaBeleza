@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  display: flex;
+  border: 2px solid #000; /* Borda mais visível */
+  border-radius: 16px; /* Mais arredondado */
+  overflow: hidden;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content h3 {
+  margin: 8px 0; /* Espaçamento entre o título e o subtítulo */
+  font-size: 1.2rem; /* Tamanho do subtítulo */
+  color: #555; /* Cor do subtítulo */
+}
